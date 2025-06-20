@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: rgb(130, 196, 248);
+  --color-secondary: rgb(107, 252, 186);
+  --color-extra: rgb(1 101 192);
+  --color-stand: rgb(247, 144, 35);
+  --color-bg-color: rgb(242, 242, 242);
+  --color-bg-color-600: rgb(218, 223, 229);
+  --color-bg-second-color: rgb(182 217 252); 
+  --color-black: rgb(0, 0, 0);
+  --color-sec-black: rgb(33, 39, 43);
+  --text-xs: 0.82rem;
+  --text-sm: 0.98rem;
+  --text-base: 1.15rem;
+  --text-lg: 1.22rem;
+  --text-xl: 1.36rem;
+  --text-1_5xl: 1.5rem;
+  --text-2xl: 1.725rem;
+  --text-3xl: 2.155rem;
+  --text-4xl: 2.58rem;
+  --text-5xl: 3.45rem;
+  --text-6xl: 4.3rem;
+  --text-7xl: 5.17rem;
+  --text-8xl: 6.9rem;
+  --text-9xl: 9.2rem
+}
+
+body {
+  @apply text-1_5xl text-sec-black overflow-x-hidden bg-bg-color;
+  font-family: var(--font-onest), sans-serif;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  opacity: 0.2 !important;
+}
